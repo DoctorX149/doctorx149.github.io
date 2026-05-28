@@ -10,7 +10,11 @@ class myNavbar extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML = `
-            <nav class="navbar navbar-expand-sm">
+            <link
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+                rel="stylesheet"
+            />
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
                 <a class="navbar-brand" href="/index.html">Alexander Hawkins</a>
                 <button 
                     class="navbar-toggler" 
@@ -25,18 +29,20 @@ class myNavbar extends HTMLElement {
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarContent">
-                    <a class="nav-item nav-link" href="/about.html">
-                        About Me
-                    </a>
-                    <a class="nav-item nav-link" href="/projects.html">
-                        Projects
-                    </a>
-                    <a class="nav-item nav-link" href="/experience.html">
-                        Experience
-                    </a>
-                    <a class="nav-item nav-link" href="/contact.html">
-                        Contact Me
-                    </a>
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-item nav-link" href="/about.html">
+                            About Me
+                        </a>
+                        <a class="nav-item nav-link" href="/projects.html">
+                            Projects
+                        </a>
+                        <a class="nav-item nav-link" href="/experience.html">
+                            Experience
+                        </a>
+                        <a class="nav-item nav-link" href="/contact.html">
+                            Contact Me
+                        </a>
+                    </div>
                 </div>
             </nav>
         `;
