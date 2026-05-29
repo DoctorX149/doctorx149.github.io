@@ -1,0 +1,10 @@
+.custom-card-image {
+    aspect-ratio: 1 / 1;
+
+    width: 100%;
+    max-width: 200px;
+
+    object-fit: cover;
+
+    object-position: center;
+}
