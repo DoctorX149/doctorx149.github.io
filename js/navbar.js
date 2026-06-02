@@ -15,7 +15,8 @@ class myNavbar extends HTMLElement {
                 rel="stylesheet"
             />
             <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                <a class="navbar-brand" href="/index.html">Alexander Hawkins</a>
+             <div class="container-fluid px-3">
+                <a class="navbar-brand" href="/index.html">Xander Hawkins</a>
                 <button 
                     class="navbar-toggler" 
                     type="button"
@@ -44,6 +45,7 @@ class myNavbar extends HTMLElement {
                         </a>
                     </div>
                 </div>
+             </div>
             </nav>
         `;
     }
